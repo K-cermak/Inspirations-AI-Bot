@@ -132,6 +132,7 @@
 
 
     <div class="container text-center">
+        <a href="/ai-images/fb/index.php" class="btn btn-primary m-5"><i class="bi bi-facebook"></i> Autorizovat FB účet</a>
         <h4 class="btn btn-primary m-5" onclick="openModal('addNewPost')"><i class="bi bi-file-earmark-plus"></i> Vytvořit nový příspěvek</h4>
     </div>
 
