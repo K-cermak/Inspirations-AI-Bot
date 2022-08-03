@@ -37,6 +37,15 @@
             break;
         }
 
+        if ($action == "getVar") {
+            if (!isset($_GET["var"])) {
+                die("Error: Variable not found.");
+            }
+            $var = $_GET["var"];
+            echo getVariable($var);
+            break;
+        }
+
     } while (false);
 
 ?>

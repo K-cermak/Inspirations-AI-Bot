@@ -1,6 +1,7 @@
 <?php
     require_once("tokens.php");
     require_once("twitter/publish.php");
+    require_once("instagram/publish.php");
 
     //send post request to URL_BASE with API_KEY and action=getId
     $ch = curl_init();
@@ -29,16 +30,22 @@
         fclose($file);
 
         //publish tweet with image and text
-        publish($twitterText, $image);
-
+        publishTwitter($twitterText, $image);
 
         //delete image
         unlink("twitter/images/" . $image);
+
+        //publish instagram post with text
+        publishInstagram($igText, IMAGE_PATH . $image);
+
+        //wait 30 seconds
+        sleep(30);
+
+        //delete request
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, URL_BASE . "?api=" . API_KEY . "&action=delete&id=" . $id);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($ch);
+        curl_close($ch);
     }
-
-
-    //send to instagram api
-
-    //wait 1 minuty
-    //delete request
 ?>

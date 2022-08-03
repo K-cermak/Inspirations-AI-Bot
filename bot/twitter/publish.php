@@ -2,7 +2,7 @@
     require_once("keys.php");
     require_once("vendor/autoload.php");
 
-    function publish($text, $imageName) {
+    function publishTwitter($text, $imageName) {
         $imageLocation = __DIR__ . "/images/" . $imageName;
 
         $credentials = array(
