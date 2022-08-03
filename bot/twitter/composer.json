@@ -1,0 +1,5 @@
+{
+    "require": {
+        "coderjerk/bird-elephant": "^0.4.4"
+    }
+}

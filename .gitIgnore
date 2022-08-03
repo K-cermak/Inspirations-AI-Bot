@@ -1,3 +1,6 @@
 page/fb/vendor/
-bot/tokens.php
 page/tokens.php
+
+bot/tokens.php
+bot/twitter/vendor/
+bot/twitter/keys.php
