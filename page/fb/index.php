@@ -1,9 +1,10 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-
     session_start();
+    if (!isset($_SESSION['username'])) {
+        header('Location: ../login.php');
+        die();
+    }
+    
     include '../db.php';
     require_once __DIR__ . '/vendor/autoload.php';
 
@@ -14,8 +15,6 @@
         'default_graph_version' => getVariable("fbGraphVersion"),
         'persistent_data_handler' => 'session'
     );
-
-    print_r($creds);
 
     $facebook = new Facebook\Facebook( $creds );
     $helper = $facebook->getRedirectLoginHelper();

@@ -115,7 +115,9 @@
         <h3>Počet zadaných příspěvků: <?php echo numberOfPosts(); ?></h3>
         <h3>Vystačí na cca: <?php
         $days = numberOfPosts() / 4; 
-        echo round($days);
+        $days = round($days);
+        echo $days;
+        
         if ($days == 1) {
             echo " den";
         } else if ($days < 5 && $days > 1) {
