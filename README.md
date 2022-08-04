@@ -44,5 +44,5 @@
 - https://github.com/K-cermak/Gympl-Bot
 - https://github.com/danieldevine/bird-elephant
 - https://github.com/jstolpe/blog_code/tree/master/instagram_graph_api
-- Bootstrap 5 (https://getbootstrap.com)
-- Bootstrap Icons (https://icons.getbootstrap.com)
+- https://getbootstrap.com
+- https://icons.getbootstrap.com
