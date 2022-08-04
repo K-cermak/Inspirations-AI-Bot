@@ -151,7 +151,7 @@
                     <form method="POST" action="index.php" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="ig-text">Popisek pro IG:</label>
-                            <textarea class="form-control" id="ig-text" name="ig-text" required>#art #artist #ai #inspiration #inspirations #images</textarea>
+                            <textarea class="form-control" id="ig-text" name="ig-text" style="min-height: 300px;"required>#art #artist #ai #inspiration #inspirations #images</textarea>
                         </div>
 
                         <div class="mb-3">
