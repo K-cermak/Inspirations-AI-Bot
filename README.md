@@ -1,6 +1,6 @@
 # Inspirations AI Bot
 
-### What's a Inspirations AI Bot?
+### What's the Inspirations AI Bot?
 - It's a tool to post predefined content on Instagram and Twitter about AI art.
 - https://twitter.com/inspirations_ai
 - https://www.instagram.com/inspirations_ai/

@@ -126,10 +126,6 @@
             echo " dní";
         } ?></h3>
         <h3>Autorizace přes FB proběhla: <?php echo getVariable("fbLoginTime") ?></h3>
-
-        <?php // date("j.n.Y H:i:s")  ?>
-
-
     </div>
 
 
